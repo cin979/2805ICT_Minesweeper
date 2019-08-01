@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const path = require('path');
-require('./routes/accRoute.js')(app,path);
 
 app.use(express.static(__dirname+'/www'));
 
